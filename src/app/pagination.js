@@ -1,24 +1,23 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice } from "@reduxjs/toolkit";
 
 export const pagination = createSlice({
-  name: 'page',
+  name: "page",
 
   initialState: {
-    value: 1
+    value: 1,
   },
   reducers: {
-    increment: state => {
-      state.value += 1
+    increment: (state) => {
+      state.value += 1;
     },
-    decrement: state => {
-      if(state.value>1){
+    decrement: (state) => {
+      if (state.value > 1) {
         state.value -= 1;
       }
-    }
-  }
-})
+    },
+  },
+});
 
-// Action creators are generated for each case reducer function
-export const { increment, decrement } = pagination.actions
+export const { increment, decrement } = pagination.actions;
 
-export default pagination.reducer
+export default pagination.reducer;
