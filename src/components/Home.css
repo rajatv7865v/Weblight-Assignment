@@ -1,0 +1,10 @@
+.head-sec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loading-sec{
+    display: flex;
+    justify-content: center;
+    margin-top: 12%;
+}

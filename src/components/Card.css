@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    background: whitesmoke;
+    justify-content: space-around;
+    align-items: center;
+    width: 98%;
+    margin: 15px;
+
+  }
+  .container:hover{
+    transform: scale(1.02);
+  }
+  .img-sec{
+    width: 20%;
+    padding: 10px ;
+  }
+  .img-sec img{
+    width:100%;
+
+  }
+  .span-sec{
+    display: flex;
+    gap: 20px;
+  }
+  .span-sec span{
+    padding: 10px;
+    background: lightgrey;
+  }
+  
