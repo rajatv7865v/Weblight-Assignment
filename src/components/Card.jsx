@@ -47,7 +47,7 @@ const Card = ({ item }) => {
       </div>
       {showGraph ? (
         <div>
-          <Graph1 />
+          <Graph1 owner={owner.login} repo={name}/>
           <Graph2 owner={owner.login} repo={name}/>
         </div>
       ) : null}

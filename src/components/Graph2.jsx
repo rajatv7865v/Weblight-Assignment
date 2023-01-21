@@ -4,9 +4,8 @@ import HighchartsReact from "highcharts-react-official";
 import { useEffect } from "react";
 
 const Graph2 = ({ owner, repo }) => {
- 
   const [data, setData] = useState([]);
-  // console.log(data) 
+  console.log(data)
   // console.log("owner", owner);
   // console.log("repo", repo);
 
@@ -15,15 +14,12 @@ const Graph2 = ({ owner, repo }) => {
       text: owner,
     },
     series: [
-      
       {
-        data: data
+        data: data,
       },
-      
-      
-    ]
+    ],
   };
-//  console.log("graphData",graphData)
+  //  console.log("graphData",graphData)
   useEffect(() => {
     const url = `https://api.github.com/repos/${owner}/${repo}/stats/code_frequency`;
 
